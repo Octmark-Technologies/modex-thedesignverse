@@ -64,7 +64,7 @@ export default function Footer() {
               <li><Link to="/membership" style={{ color: 'inherit' }}>Membership Tiers</Link></li>
               <li><Link to="/experience-centre" style={{ color: 'inherit' }}>Specification Zone</Link></li>
               <li><Link to="/experience-centre" style={{ color: 'inherit' }}>Material Lab Access</Link></li>
-              {/* <li><Link to="/community" style={{ color: 'inherit' }}>Events & Networking</Link></li> */}
+              <li><a href="https://thedesignverse.co.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--brass-dark)', fontWeight: 700 }}>The DesignVerse (Homeowners) ↗</a></li>
             </ul>
           </div>
 

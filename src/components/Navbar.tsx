@@ -208,6 +208,22 @@ export default function Navbar({ onOpenModal }: { onOpenModal: () => void }) {
             Experience Centre
           </Link>
 
+          <a
+            href="https://thedesignverse.co.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: 'var(--brass-dark)',
+              fontSize: '0.82rem',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.04em',
+              textDecoration: 'none',
+            }}
+          >
+            Homeowner Site ↗
+          </a>
+
           {/* <Link
             to="/community"
             style={{
