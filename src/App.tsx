@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import MembershipModal from './components/MembershipModal'
@@ -21,7 +21,7 @@ export default function App() {
   const handleCloseModal = () => setModalOpen(false)
 
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar onOpenModal={handleOpenModal} />
       <main style={{ minHeight: '80vh' }}>
         <Routes>
@@ -38,6 +38,6 @@ export default function App() {
       <Footer />
       <FloatingActions onOpenModal={handleOpenModal} />
       <MembershipModal isOpen={modalOpen} onClose={handleCloseModal} />
-    </BrowserRouter>
+    </Router>
   )
 }
