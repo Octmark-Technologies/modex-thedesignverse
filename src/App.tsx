@@ -14,6 +14,8 @@ import ExperienceCentrePage from './pages/ExperienceCentrePage'
 import MembershipPage from './pages/MembershipPage'
 import CommunityEventsPage from './pages/CommunityEventsPage'
 
+import ServicePage from './pages/ServicePage'
+
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false)
 
@@ -33,6 +35,7 @@ export default function App() {
           <Route path="/experience-centre" element={<ExperienceCentrePage onOpenModal={handleOpenModal} />} />
           <Route path="/membership" element={<MembershipPage onOpenModal={handleOpenModal} />} />
           <Route path="/community" element={<CommunityEventsPage onOpenModal={handleOpenModal} />} />
+          <Route path="/services/*" element={<ServicePage onOpenModal={handleOpenModal} />} />
         </Routes>
       </main>
       <Footer />

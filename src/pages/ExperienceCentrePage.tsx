@@ -78,7 +78,7 @@ export default function ExperienceCentrePage({ onOpenModal }: { onOpenModal: () 
           </div>
 
           {/* Thumbnail Strip */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '0.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(70px, 1fr))', gap: '0.5rem' }}>
             {galleryImages.map((img, i) => (
               <button
                 key={img.alt}
@@ -91,7 +91,7 @@ export default function ExperienceCentrePage({ onOpenModal }: { onOpenModal: () 
                   cursor: 'pointer',
                   opacity: activeImage === i ? 1 : 0.65,
                   transition: 'all 0.2s ease',
-                  height: '75px',
+                  height: '65px',
                 }}
               >
                 <img src={img.src} alt={img.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
@@ -136,7 +136,7 @@ export default function ExperienceCentrePage({ onOpenModal }: { onOpenModal: () 
         </div>
 
         {/* Location Card */}
-        <div className="tdv-card" style={{ padding: '3rem', marginBottom: '5rem', background: '#FFFFFF' }}>
+        <div className="tdv-card" style={{ marginBottom: '5rem', background: '#FFFFFF' }}>
           <div className="grid-2" style={{ alignItems: 'center' }}>
             <div>
               <span className="section-label" style={{ marginBottom: '0.5rem' }}>Hub Location</span>

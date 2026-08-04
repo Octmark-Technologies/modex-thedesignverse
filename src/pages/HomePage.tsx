@@ -1,9 +1,56 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Layers, Building, Factory, Compass, CheckCircle2 } from 'lucide-react'
+import { ArrowRight, Layers, Building, Factory, Compass, CheckCircle2, ChevronRight } from 'lucide-react'
 
 const B = import.meta.env.BASE_URL
 
 export default function HomePage({ onOpenModal }: { onOpenModal: () => void }) {
+  const [activeTab, setActiveTab] = useState(0)
+
+  const serviceCategories = [
+    {
+      title: 'Coworking',
+      icon: <Building size={20} />,
+      desc: 'Premium shared and private workspaces built for solo architects and expanding design studios.',
+      items: [
+        { name: 'Cabins', path: '/services/coworking/cabins' },
+        { name: 'Hotseats', path: '/services/coworking/hotseats' },
+      ],
+    },
+    {
+      title: 'Experience Centre',
+      icon: <Layers size={20} />,
+      desc: 'Physical spaces to specify finishes, touch 10,000+ real samples, and host client presentations.',
+      items: [
+        { name: 'Kitchens', path: '/services/experience-centre/kitchens' },
+        { name: 'Wardrobes', path: '/services/experience-centre/wardrobes' },
+        { name: 'Textures & Samples', path: '/services/experience-centre/textures-samples' },
+        { name: 'Hardware', path: '/services/experience-centre/hardware' },
+        { name: 'Furniture', path: '/services/experience-centre/furniture' },
+        { name: 'Decor', path: '/services/experience-centre/decor' },
+        { name: 'Home Automation', path: '/services/experience-centre/home-automation' },
+      ],
+    },
+    {
+      title: 'Production',
+      icon: <Factory size={20} />,
+      desc: 'German modular manufacturing backing, material procurement, and shipping logistics.',
+      items: [
+        { name: 'Factory Support', path: '/services/production/factory-support' },
+        { name: 'Procurement', path: '/services/production/procurement' },
+        { name: 'Transportation', path: '/services/production/transportation' },
+      ],
+    },
+    {
+      title: 'Execution',
+      icon: <Compass size={20} />,
+      desc: 'Highly trained carpentry and assembly teams to ensure flawless modular installations.',
+      items: [
+        { name: 'Carpentry Teams', path: '/services/execution/carpentry-teams' },
+      ],
+    },
+  ]
+
   return (
     <div style={{ paddingTop: '90px' }}>
       {/* Hero Section */}
@@ -47,6 +94,182 @@ export default function HomePage({ onOpenModal }: { onOpenModal: () => void }) {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Section 2: Our Services (New responsive & mobile-optimised) */}
+      <section style={{ padding: '5rem 0', background: '#F8FAF7', borderBottom: '1px solid rgba(30, 57, 79, 0.08)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span className="section-label">MODEX Infrastructure</span>
+            <h2 style={{ fontSize: '2.2rem', color: 'var(--teal)', fontWeight: 700 }}>Our Services & Solutions</h2>
+            <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0.5rem auto 0', fontSize: '0.95rem' }}>
+              Touch material libraries, occupy lockable studio cabins, and leverage modular factory assembly lines.
+            </p>
+          </div>
+
+          {/* Desktop/Tablet Grid View */}
+          <div className="services-desktop-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
+            {serviceCategories.map((cat, idx) => (
+              <div
+                key={cat.title}
+                className="tdv-card"
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  background: '#ffffff',
+                  padding: '1.75rem',
+                  border: '1px solid rgba(30, 57, 79, 0.08)',
+                  borderRadius: '6px',
+                  boxShadow: '0 4px 12px rgba(30, 57, 79, 0.02)',
+                }}
+              >
+                <div>
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.6rem',
+                      color: 'var(--teal)',
+                      fontWeight: 800,
+                      textTransform: 'uppercase',
+                      fontSize: '0.85rem',
+                      letterSpacing: '0.05em',
+                      marginBottom: '1rem',
+                    }}
+                  >
+                    <span style={{ color: 'var(--brass-dark)' }}>{cat.icon}</span>
+                    {cat.title}
+                  </div>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '1.5rem' }}>
+                    {cat.desc}
+                  </p>
+                </div>
+
+                <div style={{ borderTop: '1px solid rgba(30, 57, 79, 0.06)', paddingTop: '1rem' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                    {cat.items.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.path}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          fontSize: '0.8rem',
+                          color: 'var(--teal)',
+                          fontWeight: 600,
+                          padding: '0.3rem 0',
+                          transition: 'color 0.2s',
+                        }}
+                        className="service-link"
+                      >
+                        {item.name}
+                        <ChevronRight size={14} className="link-arrow" style={{ opacity: 0.6, transition: 'transform 0.2s' }} />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile Tab Switcher (Cuts scrolling) */}
+          <div className="services-mobile-tabs" style={{ display: 'none' }}>
+            <div
+              style={{
+                display: 'flex',
+                gap: '0.5rem',
+                overflowX: 'auto',
+                paddingBottom: '0.75rem',
+                marginBottom: '1.25rem',
+                scrollbarWidth: 'none',
+              }}
+            >
+              {serviceCategories.map((cat, idx) => (
+                <button
+                  key={cat.title}
+                  onClick={() => setActiveTab(idx)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.4rem',
+                    padding: '0.6rem 1rem',
+                    borderRadius: '20px',
+                    border: activeTab === idx ? '1px solid var(--teal)' : '1px solid rgba(30, 57, 79, 0.12)',
+                    background: activeTab === idx ? 'var(--teal)' : '#ffffff',
+                    color: activeTab === idx ? '#ffffff' : 'var(--teal)',
+                    fontSize: '0.8rem',
+                    fontWeight: 700,
+                    whiteSpace: 'nowrap',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {cat.icon}
+                  {cat.title}
+                </button>
+              ))}
+            </div>
+
+            {/* Selected Category Content */}
+            <div
+              className="tdv-card"
+              style={{
+                background: '#ffffff',
+                padding: '1.5rem',
+                borderRadius: '6px',
+                border: '1px solid rgba(30, 57, 79, 0.08)',
+              }}
+            >
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '1.25rem' }}>
+                {serviceCategories[activeTab].desc}
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', borderTop: '1px solid rgba(30, 57, 79, 0.06)', paddingTop: '1rem' }}>
+                {serviceCategories[activeTab].items.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      fontSize: '0.85rem',
+                      color: 'var(--teal)',
+                      fontWeight: 700,
+                      padding: '0.5rem 0',
+                    }}
+                  >
+                    {item.name}
+                    <ChevronRight size={16} style={{ color: 'var(--brass-dark)' }} />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>{`
+          .service-link:hover {
+            color: var(--brass-dark) !important;
+          }
+          .service-link:hover .link-arrow {
+            transform: translateX(3px);
+            color: var(--brass-dark);
+          }
+          @media (max-width: 991px) {
+            .services-desktop-grid {
+              grid-template-columns: repeat(2, 1fr) !important;
+            }
+          }
+          @media (max-width: 600px) {
+            .services-desktop-grid {
+              display: none !important;
+            }
+            .services-mobile-tabs {
+              display: block !important;
+            }
+          }
+        `}</style>
       </section>
 
       {/* Experience Centre Feature Banner */}
