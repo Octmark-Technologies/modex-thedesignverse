@@ -13,6 +13,7 @@ import VendorsPage from './pages/VendorsPage'
 import ExperienceCentrePage from './pages/ExperienceCentrePage'
 import MembershipPage from './pages/MembershipPage'
 import CommunityEventsPage from './pages/CommunityEventsPage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 
 import ServicePage from './pages/ServicePage'
 
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/experience-centre" element={<ExperienceCentrePage onOpenModal={handleOpenModal} />} />
           <Route path="/membership" element={<MembershipPage onOpenModal={handleOpenModal} />} />
           <Route path="/community" element={<CommunityEventsPage onOpenModal={handleOpenModal} />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/services/*" element={<ServicePage onOpenModal={handleOpenModal} />} />
         </Routes>
       </main>

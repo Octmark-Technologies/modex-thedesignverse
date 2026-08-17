@@ -1,0 +1,242 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "MODEX by TDV" [ref=f1e5] [cursor=pointer]:
+        - /url: "#/"
+        - generic [ref=f1e6]: MODEX
+        - generic [ref=f1e7]: by TDV
+      - navigation [ref=f1e8]:
+        - button "Our Services" [ref=f1e10] [cursor=pointer]
+        - button "For Professionals" [ref=f1e14] [cursor=pointer]
+        - link "Membership & Pricing" [ref=f1e17] [cursor=pointer]:
+          - /url: "#/membership"
+        - link "Experience Centre" [ref=f1e18] [cursor=pointer]:
+          - /url: "#/experience-centre"
+        - link "Homeowner Site ↗" [ref=f1e19] [cursor=pointer]:
+          - /url: https://thedesignverse.co.in/
+      - button "Book your Tour" [ref=f1e21] [cursor=pointer]
+  - main [ref=f1e24]:
+    - generic [ref=f1e25]:
+      - generic [ref=f1e28]:
+        - generic [ref=f1e29]: The Production Ecosystem for Design Professionals
+        - heading [level=1] [ref=f1e30]:
+          - text: Scale Your Design Practice with
+          - emphasis [ref=f1e31]: Factory Precision
+          - text: "& Shared Infrastructure"
+        - paragraph [ref=f1e32]: MODEX by The DesignVerse provides interior designers, architects, builders, and trade vendors with an 11,500 sq ft physical material lab, co-working suites, and turnkey manufacturing execution in Hyderabad.
+        - generic [ref=f1e33]:
+          - button "Apply for Membership" [ref=f1e34] [cursor=pointer]
+          - link "Book Space & Material Tour" [ref=f1e37] [cursor=pointer]:
+            - /url: "#/experience-centre"
+      - generic [ref=f1e39]:
+        - generic [ref=f1e40]:
+          - generic [ref=f1e41]: MODEX Infrastructure
+          - heading "Our Services & Solutions" [level=2] [ref=f1e42]
+          - paragraph [ref=f1e43]: Touch material libraries, occupy lockable studio cabins, and leverage modular factory assembly lines.
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]:
+            - generic [ref=f1e46]:
+              - generic [ref=f1e47]: Coworking
+              - paragraph [ref=f1e52]: Premium shared and private workspaces built for solo architects and expanding design studios.
+            - generic [ref=f1e54]:
+              - link "Cabins" [ref=f1e55] [cursor=pointer]:
+                - /url: "#/services/coworking/cabins"
+              - link "Hotseats" [ref=f1e58] [cursor=pointer]:
+                - /url: "#/services/coworking/hotseats"
+          - generic [ref=f1e61]:
+            - generic [ref=f1e62]:
+              - generic [ref=f1e63]: Experience Centre
+              - paragraph [ref=f1e69]: Physical spaces to specify finishes, touch 10,000+ real samples, and host client presentations.
+            - generic [ref=f1e71]:
+              - link "Kitchens" [ref=f1e72] [cursor=pointer]:
+                - /url: "#/services/experience-centre/kitchens"
+              - link "Wardrobes" [ref=f1e75] [cursor=pointer]:
+                - /url: "#/services/experience-centre/wardrobes"
+              - link "Textures & Samples" [ref=f1e78] [cursor=pointer]:
+                - /url: "#/services/experience-centre/textures-samples"
+              - link "Hardware" [ref=f1e81] [cursor=pointer]:
+                - /url: "#/services/experience-centre/hardware"
+              - link "Furniture" [ref=f1e84] [cursor=pointer]:
+                - /url: "#/services/experience-centre/furniture"
+              - link "Decor" [ref=f1e87] [cursor=pointer]:
+                - /url: "#/services/experience-centre/decor"
+              - link "Home Automation" [ref=f1e90] [cursor=pointer]:
+                - /url: "#/services/experience-centre/home-automation"
+          - generic [ref=f1e93]:
+            - generic [ref=f1e94]:
+              - generic [ref=f1e95]: Production
+              - paragraph [ref=f1e99]: German modular manufacturing backing, material procurement, and shipping logistics.
+            - generic [ref=f1e101]:
+              - link "Factory Support" [ref=f1e102] [cursor=pointer]:
+                - /url: "#/services/production/factory-support"
+              - link "Procurement" [ref=f1e105] [cursor=pointer]:
+                - /url: "#/services/production/procurement"
+              - link "Transportation" [ref=f1e108] [cursor=pointer]:
+                - /url: "#/services/production/transportation"
+          - generic [ref=f1e111]:
+            - generic [ref=f1e112]:
+              - generic [ref=f1e113]: Execution
+              - paragraph [ref=f1e118]: Highly trained carpentry and assembly teams to ensure flawless modular installations.
+            - link "Carpentry Teams" [ref=f1e121] [cursor=pointer]:
+              - /url: "#/services/execution/carpentry-teams"
+      - generic [ref=f1e126]:
+        - generic [ref=f1e127]:
+          - generic [ref=f1e128]: Experience Centre · Jubilee Hills
+          - heading "11,500 SQ FT Physical Specification Lounge" [level=2] [ref=f1e129]
+          - paragraph [ref=f1e130]: Bring your clients to our flagship Experience Centre on Road No. 36, Jubilee Hills. Explore 10,000+ real material samples, live German modular kitchens, and sound-insulated presentation suites.
+          - generic [ref=f1e131]:
+            - generic [ref=f1e132]:
+              - generic [ref=f1e133]: 11,500
+              - generic [ref=f1e134]: SQ FT Space
+            - generic [ref=f1e135]:
+              - generic [ref=f1e136]: 10,000+
+              - generic [ref=f1e137]: Material Samples
+            - generic [ref=f1e138]:
+              - generic [ref=f1e139]: 7 Days
+              - generic [ref=f1e140]: Open Weekly
+          - link "Explore Experience Centre" [ref=f1e141] [cursor=pointer]:
+            - /url: "#/experience-centre"
+        - img "The DesignVerse Experience Centre" [ref=f1e145]
+      - generic [ref=f1e148]:
+        - generic [ref=f1e149]:
+          - generic [ref=f1e150]: 11,500 SQ FT
+          - generic [ref=f1e151]: Specification Hub
+        - generic [ref=f1e152]:
+          - generic [ref=f1e153]: 10,000+
+          - generic [ref=f1e154]: Material Samples
+        - generic [ref=f1e155]:
+          - generic [ref=f1e156]: 5,000+
+          - generic [ref=f1e157]: Trade Vendor Network
+        - generic [ref=f1e158]:
+          - generic [ref=f1e159]: 1,500+
+          - generic [ref=f1e160]: Trade Executions
+      - generic [ref=f1e162]:
+        - generic [ref=f1e163]:
+          - generic [ref=f1e164]: Trade Portals
+          - heading "Built Specifically For Your Trade" [level=2] [ref=f1e165]
+          - paragraph [ref=f1e166]: Tailored operational solutions designed to solve the execution and sourcing bottlenecks of each discipline.
+        - generic [ref=f1e167]:
+          - generic [ref=f1e168]:
+            - img "Interior Designers Portal" [ref=f1e170]
+            - generic [ref=f1e171]:
+              - heading "Interior Designers" [level=3] [ref=f1e172]
+              - paragraph [ref=f1e173]: Scale from 3 to 10 projects/month without adding operational overhead or manufacturing risk.
+              - link "Explore Portal" [ref=f1e174] [cursor=pointer]:
+                - /url: "#/for-interior-designers"
+          - generic [ref=f1e177]:
+            - img "Architects Portal" [ref=f1e179]
+            - generic [ref=f1e180]:
+              - heading "Architects" [level=3] [ref=f1e181]
+              - paragraph [ref=f1e182]: Access a dedicated material lab, technical specification zone, and reliable execution teams.
+              - link "Explore Portal" [ref=f1e183] [cursor=pointer]:
+                - /url: "#/for-architects"
+          - generic [ref=f1e186]:
+            - img "Builders & Contractors Portal" [ref=f1e188]
+            - generic [ref=f1e189]:
+              - heading "Builders & Contractors" [level=3] [ref=f1e190]
+              - paragraph [ref=f1e191]: Gain access to commercial project pipelines, factory-finish modular production, and material bulk rates.
+              - link "Explore Portal" [ref=f1e192] [cursor=pointer]:
+                - /url: "#/for-builders-contractors"
+          - generic [ref=f1e195]:
+            - img "Vendors & Suppliers Portal" [ref=f1e197]
+            - generic [ref=f1e198]:
+              - heading "Vendors & Suppliers" [level=3] [ref=f1e199]
+              - paragraph [ref=f1e200]: Place your physical product samples directly in front of 500+ active architects and designers daily.
+              - link "Explore Portal" [ref=f1e201] [cursor=pointer]:
+                - /url: "#/for-vendors"
+      - generic [ref=f1e205]:
+        - generic [ref=f1e206]:
+          - generic [ref=f1e207]: Transparent Pricing
+          - heading "MODEX Membership Tiers" [level=2] [ref=f1e208]
+          - paragraph [ref=f1e209]: Choose the co-working, specification, and manufacturing support tier that fits your growth stage.
+        - generic [ref=f1e210]:
+          - generic [ref=f1e211]:
+            - generic [ref=f1e212]:
+              - img "Hot Seats Workspace" [ref=f1e214]
+              - generic [ref=f1e215]:
+                - generic [ref=f1e216]: Hot Seat
+                - generic [ref=f1e217]: ₹9,999 / month
+                - list [ref=f1e218]:
+                  - listitem [ref=f1e219]: Flexible Work Desk Access
+                  - listitem [ref=f1e223]: 10,000+ Material Library Access
+                  - listitem [ref=f1e227]: High-Speed Fiber Wi-Fi & Lounge
+            - button "Select Hot Seat" [ref=f1e232] [cursor=pointer]
+          - generic [ref=f1e233]:
+            - generic [ref=f1e234]: Most Popular
+            - generic [ref=f1e235]:
+              - img "Dedicated Cabin Suite" [ref=f1e237]
+              - generic [ref=f1e238]:
+                - generic [ref=f1e239]: Dedicated Cabin
+                - generic [ref=f1e240]: ₹40,000 / month
+                - list [ref=f1e241]:
+                  - listitem [ref=f1e242]: Lockable Private Cabin Suite
+                  - listitem [ref=f1e246]: Client Presentation Pod Access
+                  - listitem [ref=f1e250]: Priority Production Desk Access
+            - button "Select Dedicated Cabin" [ref=f1e255] [cursor=pointer]
+          - generic [ref=f1e256]:
+            - generic [ref=f1e257]:
+              - img "Material Lab & Premium Partnership" [ref=f1e259]
+              - generic [ref=f1e260]:
+                - generic [ref=f1e261]: Premium Partnership
+                - generic [ref=f1e262]: ₹80,000 / month
+                - list [ref=f1e263]:
+                  - listitem [ref=f1e264]: Full Suite + Factory Backing
+                  - listitem [ref=f1e268]: Featured Material Showcase Booth
+                  - listitem [ref=f1e272]: Dedicated Project Manager
+            - button "Select Premium Tier" [ref=f1e277] [cursor=pointer]
+  - contentinfo [ref=f1e278]:
+    - generic [ref=f1e279]:
+      - generic [ref=f1e280]:
+        - generic [ref=f1e281]:
+          - generic [ref=f1e282]:
+            - generic [ref=f1e283]: MODEX
+            - generic [ref=f1e284]: by TDV
+          - paragraph [ref=f1e285]: Hyderabad's most comprehensive trade experience , 11,500 sq ft specification centre, 10,000+ material samples, and end-to-end B2B project backing.
+          - generic [ref=f1e286]: Trade Only Ecosystem
+        - generic [ref=f1e290]:
+          - generic [ref=f1e291]: Trade Portals
+          - list [ref=f1e292]:
+            - listitem [ref=f1e293]:
+              - link "For Interior Designers" [ref=f1e294] [cursor=pointer]:
+                - /url: "#/for-interior-designers"
+            - listitem [ref=f1e295]:
+              - link "For Architects" [ref=f1e296] [cursor=pointer]:
+                - /url: "#/for-architects"
+            - listitem [ref=f1e297]:
+              - link "For Builders & Contractors" [ref=f1e298] [cursor=pointer]:
+                - /url: "#/for-builders-contractors"
+            - listitem [ref=f1e299]:
+              - link "For Vendors & Suppliers" [ref=f1e300] [cursor=pointer]:
+                - /url: "#/for-vendors"
+        - generic [ref=f1e301]:
+          - generic [ref=f1e302]: B2B Ecosystem
+          - list [ref=f1e303]:
+            - listitem [ref=f1e304]:
+              - link "Membership Tiers" [ref=f1e305] [cursor=pointer]:
+                - /url: "#/membership"
+            - listitem [ref=f1e306]:
+              - link "Specification Zone" [ref=f1e307] [cursor=pointer]:
+                - /url: "#/experience-centre"
+            - listitem [ref=f1e308]:
+              - link "Material Lab Access" [ref=f1e309] [cursor=pointer]:
+                - /url: "#/experience-centre"
+            - listitem [ref=f1e310]:
+              - link "The DesignVerse (Homeowners) ↗" [ref=f1e311] [cursor=pointer]:
+                - /url: https://thedesignverse.co.in/
+        - generic [ref=f1e312]:
+          - generic [ref=f1e313]: Contact MODEX
+          - generic [ref=f1e314]:
+            - generic [ref=f1e315]: 3rd Floor, Apurupa Towers, Road No. 36, Jubilee Hills, Hyderabad, 500033
+            - link "+91 91822 21363" [ref=f1e323] [cursor=pointer]:
+              - /url: tel:+919182221363
+            - link "modex@thedesignverse.co.in" [ref=f1e328] [cursor=pointer]:
+              - /url: mailto:modex@thedesignverse.co.in
+      - generic [ref=f1e329]:
+        - generic [ref=f1e330]: © 2026 The DesignVerse — MODEX. All rights reserved.
+        - generic [ref=f1e331]: B2B Production Ecosystem & Trade Hub
+  - generic [ref=f1e333]:
+    - link "Call MODEX" [ref=f1e334] [cursor=pointer]:
+      - /url: tel:+919182221363
+    - link "WhatsApp MODEX" [ref=f1e337] [cursor=pointer]:
+      - /url: https://wa.me/919182221363
+    - button "Book your Tour" [ref=f1e340] [cursor=pointer]
