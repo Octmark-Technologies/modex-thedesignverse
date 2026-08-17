@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { ChevronDown, Menu, X, ArrowRight, Building2, Store, Factory, Hammer } from 'lucide-react'
+import logoImg from './logo-modex-transparent.png'
 
 export default function Navbar({ onOpenModal }: { onOpenModal: () => void }) {
   const [scrolled, setScrolled] = useState(false)
@@ -90,32 +91,17 @@ export default function Navbar({ onOpenModal }: { onOpenModal: () => void }) {
           height: '64px',
         }}
       >
-        {/* TEXT LOGO: MODEX by TDV */}
-        <Link to="/" style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem', textDecoration: 'none' }}>
-          <div
+        {/* LOGO: MODEX by TDV */}
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img
+            src={logoImg}
+            alt="MODEX by TDV"
             style={{
-              fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", Arial, sans-serif',
-              fontWeight: 800,
-              fontSize: '1.25rem',
-              color: 'var(--teal)',
-              lineHeight: 1.1,
-              letterSpacing: '0.04em',
+              height: '36px',
+              width: 'auto',
+              display: 'block',
             }}
-          >
-            MODEX
-          </div>
-          <div
-            style={{
-              fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", Arial, sans-serif',
-              fontSize: '0.72rem',
-              fontWeight: 700,
-              letterSpacing: '0.12em',
-              color: 'var(--brass-dark)',
-              textTransform: 'uppercase',
-            }}
-          >
-            by TDV
-          </div>
+          />
         </Link>
 
         {/* Desktop Navigation */}

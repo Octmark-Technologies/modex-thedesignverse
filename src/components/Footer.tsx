@@ -1,38 +1,24 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, ShieldCheck } from 'lucide-react'
+import logoImg from './logo-modex-transparent.png'
 
 export default function Footer() {
   return (
     <footer style={{ background: '#f4f7f2', borderTop: '1px solid rgba(30, 57, 79, 0.1)', padding: '5rem 0 3rem' }}>
       <div className="container">
         <div className="grid-4" style={{ marginBottom: '3rem' }}>
-          {/* Brand TEXT LOGO: MODEX by TDV */}
+          {/* Brand LOGO: MODEX by TDV */}
           <div>
-            <div style={{ marginBottom: '1.25rem', display: 'flex', alignItems: 'baseline', gap: '0.4rem' }}>
-              <div
+            <div style={{ marginBottom: '1.25rem', display: 'flex', alignItems: 'center' }}>
+              <img
+                src={logoImg}
+                alt="MODEX by TDV"
                 style={{
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", Arial, sans-serif',
-                  fontWeight: 800,
-                  fontSize: '1.3rem',
-                  color: 'var(--teal)',
-                  lineHeight: 1.1,
-                  letterSpacing: '0.04em',
+                  height: '40px',
+                  width: 'auto',
+                  display: 'block',
                 }}
-              >
-                MODEX
-              </div>
-              <div
-                style={{
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", Arial, sans-serif',
-                  fontSize: '0.75rem',
-                  fontWeight: 700,
-                  letterSpacing: '0.12em',
-                  color: 'var(--brass-dark)',
-                  textTransform: 'uppercase',
-                }}
-              >
-                by TDV
-              </div>
+              />
             </div>
             <p style={{ fontFamily: 'var(--font)', fontSize: '0.82rem', fontWeight: 400, color: 'rgba(15, 30, 41, 0.6)', lineHeight: 1.7, maxWidth: 280, marginBottom: '1.5rem' }}>
               Hyderabad's most comprehensive trade experience  , 11,500 sq ft specification centre, 10,000+ material samples, and end-to-end B2B project backing.
@@ -104,7 +90,10 @@ export default function Footer() {
             color: 'rgba(15, 30, 41, 0.4)',
           }}
         >
-          <div>© {new Date().getFullYear()} The DesignVerse — MODEX. All rights reserved.</div>
+          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+            <span>© {new Date().getFullYear()} The DesignVerse — MODEX. All rights reserved.</span>
+            <Link to="/privacy-policy" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</Link>
+          </div>
           <div>B2B Production Ecosystem & Trade Hub</div>
         </div>
       </div>
